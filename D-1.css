@@ -1,0 +1,236 @@
+@charset "utf-8";
+
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+body {line-height: 1; color: #333; background-color: #fff; width: 100%;}
+
+.wrap {
+    width: 100%;
+    height: 850px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 🤍header */
+header {
+    width: 200px;
+    line-height: 50px;
+}
+header h1 {
+    height: 40px;
+    padding-top: 40px;
+}
+header h1 img {
+    width: 100%;
+    height: 40px;
+    object-fit: cover;
+}
+header nav .gnb {
+    width: 200px;
+    margin-top: 60px;
+}
+header nav .gnb .depth01 {
+    text-align: center;
+    border-bottom: 1px solid #333;
+    /* background-color: #d9f0c3; */
+}
+header nav .gnb .depth01 > a {
+    display: block;
+}
+header nav .gnb .depth01 .depth02 {
+    text-align: center;
+    background-color: #f0fded;
+    display: none;
+}
+header nav .gnb .depth01 > a:hover {
+    background-color: #638b3b;
+    color: #fff;
+}
+header nav .gnb .depth01 .depth02 li:hover {
+    background-color: #638b3b;
+    color: #fff;
+}
+header nav .gnb .depth01 .depth02 li {
+    border-bottom: 1px solid #333;
+}
+header nav .gnb .depth01:hover .depth02 {
+    display: block;
+}
+header .spot_menu {
+    text-align: center;
+}
+header .spot_menu p {
+    display: inline-block;
+}
+header .spot_menu p span {
+    margin: 0 10px;
+}
+
+/* 🤍main */
+/* ❤.main_slider */
+main {
+    width: calc(100% - 200px);
+    height: 850px;
+}
+.main_slider {
+    height: 400px;
+    overflow: hidden;
+}
+.main_slider .slide_wrap {
+    height: 400px;
+}
+.main_slider .slide_wrap .slide {
+    height: 100%;
+    position: relative;
+}
+.main_slider .slide_wrap .slide P {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+}
+.main_slider .slide_wrap .slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* ❤.direct */
+.direct {
+    width: 140px;
+    height: 340px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: #ffffff8c;
+    border-radius: 10px;
+}
+.direct ul {
+    padding: 20px;
+    text-align: center;
+}
+.direct ul li img {
+    width: 100px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.direct ul li span {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #638b3b;
+}
+
+/* ❤.banner */
+.banner {
+    height: 160px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: 1px solid #333;
+    margin: 20px;
+}
+.banner figure img {
+    height: 130px;
+    object-fit: cover;
+}
+.banner div h4 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.banner img:nth-of-type(2) {
+    height: 50px;
+}
+
+/* ❤.tab_wrap */
+.tab_wrap {
+    height: 230px;
+    background-color: #abd185;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+.tab_wrap .tab_menu {
+    display: flex;
+}
+.tab_wrap .tab_menu li {
+    padding: 20px 50px;
+}
+.tab_wrap .tab_menu li.active {
+    background-color: #548820;
+    color: #fff;
+}
+
+/* ❤.news */
+.tab_wrap .tab_box .news ul li {
+    line-height: 2;
+    text-align: center;
+}
+.tab_wrap .tab_box .news ul li a {
+    border-bottom: 1px solid #333;
+}
+.tab_wrap .tab_box .news ul li span {
+    margin-left: 100px;
+}
+
+/* ❤.gallery */
+.tab_wrap .tab_box  .gallery {
+    height: 100%;
+}
+.tab_wrap .tab_box  .gallery ul {
+    display: flex;
+    justify-content: center;
+    
+}
+.tab_wrap .tab_box  .gallery ul li {
+    margin: 0 20px;
+    margin-top: 10px;
+}
+.tab_wrap .tab_box  .gallery ul li img {
+    width: 350px;
+    height: 150px;
+    object-fit: cover;
+}
+.tab_wrap .tab_box  .gallery ul li img:hover {
+    opacity: 0.5;
+}
+
+/*  */
+.tab_wrap .tab_box > div {
+    display: none;
+}
+.tab_wrap .tab_box div.active {
+    display: block;
+}
+
+/* 🤍footer */
+footer {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* background-color: #ccc; */
+}
+footer div {
+    width: 200px;
+}
+footer div img {
+    height: auto;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+footer p {
+    line-height: 2;
+}
+footer .sns p {
+    display: inline-block;
+    font-weight: bold;
+}

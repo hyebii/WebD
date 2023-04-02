@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그린복지재단</title>
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+        $(function(){
+            $('.depth01').mouseenter(function(){
+                $('.depth02').stop().slideDown();
+            })
+            $('.depth01').mouseleave(function(){
+                $('.depth02').stop().slideUp();
+            })
+            $('.depth01').mouseenter(function(){
+                $('.hd_bg').stop().slideDown();
+            })
+            $('.depth01').mouseleave(function(){
+                $('.hd_bg').stop().slideUp();
+            })
+        });
+    </script>
+    <link href="css/A-2.css" rel="stylesheet" />
+    
+</head>
+
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#">
+                    <img src="img/A-2/logo.png" alt="그린복지재단" />
+                </a>
+            </h1>
+            <nav>
+                <ul class="gnb">
+                    <div class="hd_bg"></div>
+                    <li class="depth01">
+                        <a href="#">재단소개</a>
+                        <ul class="depth02">
+                            <li><a href="#">설립취지</a></li>
+                            <li><a href="#">연혁</a></li>
+                            <li><a href="#">찾아오시는길</a></li>
+                        </ul> <!-- .depth02 end -->
+                        
+                    </li> <!-- .depth01 end -->
+                    <li class="depth01">
+                        <a href="#">후원하기</a>
+                        <ul class="depth02">
+                            <li><a href="#">국내후원</a></li>
+                            <li><a href="#">국외후원</a></li>
+                            <li><a href="#">맞춤후원</a></li>
+                            </ul> <!-- .depth02 end -->    
+                        </li> <!-- .depth01 end -->
+                    <li class="depth01">
+                        <a href="#">자료실</a>
+                        <ul class="depth02">
+                            <li><a href="#">서식자료실</a></li>
+                            <li><a href="#">사진자료실</a></li>
+                            <li><a href="#">후원양식</a></li>
+                        </ul> <!-- .depth02 end -->
+                            
+                    </li> <!-- .depth01 end -->
+                    <li class="depth01">
+                        <a href="#">스토리</a>
+                        <ul class="depth02">
+                            <li><a href="#">웹진</a></li>
+                            <li><a href="#">보고서</a></li>
+                            <li><a href="#">나의 후원</a></li>
+                        </ul> <!-- .depth02 end -->
+                            
+                    </li> <!-- .depth01 end -->
+                        
+                </ul> <!-- gnb end -->
+            </nav>
+        </div> <!-- .inner end -->
+    </header>
+
+    <section class="main_visual">
+        <a href="#">
+            <img src="img/A-2/slide1.jpg" alt="더불어사는세상" />
+        </a>
+    </section> <!-- .main_visual end -->
+    
+    <section class="contents">
+        <div class="inner">
+            <div class="cont01">
+                <p><a href="#">공지사항</a></p>
+                <ul>
+                    <li><a href="#">1.첫번째 공지사항입니다.</a></li>
+                    <li><a href="#">2.두번째 공지사항입니다.</a></li>
+                    <li><a href="#">3.세번째 공지사항입니다.</a></li>
+                    <li><a href="#">4.네번째 공지사항입니다.</a></li>
+                </ul>
+            </div>  <!-- .cont01 end -->
+            <div class="cont02">
+                <p><a href="#">갤러리</a></p>
+                <div class="list">
+                    <a href="#">
+                        <figure>
+                            <img src="img/A-2/gallery1.jpg" alt="" />
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/A-2/gallery2.jpg" alt="" />
+                        </figure>
+                    </a>
+                    <a href="#">
+                        <figure>
+                            <img src="img/A-2/gallery3.jpg" alt="" />
+                        </figure>
+                    </a>
+                </div> <!-- .list end -->
+            </div> <!-- .cont02 end -->
+
+            <div class="cont03">
+                <a href="#">
+                    <figure>
+                        <img src="img/A-2/banner.jpg" alt="" />
+                    </figure>
+                </a>
+            </div> <!-- .cont03 end -->
+
+        </div> <!-- .inner end -->
+
+    </section> <!-- .contents end -->
+
+    <footer>
+        <h1>
+            <a href="#">
+                <img src="img/A-2/logo2.png" alt="그린복지재단" />
+            </a>
+        </h1>
+        <address>
+            <p>서울특별시 동대문구 장안벚꽃로 279 (휘경동 49-35). 한국산업인력공단 서울지역본부</p>
+            <div class="copyright">
+                <p>휘경동 전동중학교 건너편<span>|</span></p>
+                <p>전화번호: 164-8000<span>|</span></p>
+                <p><a href="#">http://seoul.hrdkorea.or.kr</a></p>
+            </div> <!-- .copyright end -->
+        </address>
+        <div class="site">
+            <form>
+                <select>
+                    <option>패밀리사이트</option>
+                    <option>세이브더칠드런</option>
+                    <option>보성복지재단</option>
+                    <option>밥상공동체복지재단</option>
+                    <option>하트하트재단</option>
+                    <option>아름다운재단</option>
+                </select>
+            </form>
+        </div> <!-- .site -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,248 @@
+@charset "utf-8";
+
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
+body {line-height: 1; color: #333; background-color: #fff;}
+
+
+/* 🤍.popup */
+.popup {
+    width: 500px;
+    height: 350px;
+    background-color: #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    display: none;
+}
+.popup p {
+    height: 300px;
+    padding: 70px 40px;
+    line-height: 1.5;
+}
+.popup button {
+    width: 100%;
+    height: 50px;
+    border: 0;
+    background-color: rgb(125, 125, 240);
+    font-weight: bold;
+    
+}
+
+/* 🤍.wrap */
+.wrap {
+    width: 100%;
+    height: calc(100% - 120px);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 🤍header */
+header {
+    width: 200px;
+    height: 100%;
+    /* background-color: #ccc; */
+    line-height: 50px;
+}
+header h1 {
+    width: 100%;
+    text-align: center;
+    padding: 40px 0;
+}
+header h1 img {
+    width: 200px;
+    height: 40px;
+    object-fit: cover;
+}
+header nav .gnb .depth01 {
+    text-align: center;
+    width: 100%;
+    position: relative;
+    border: 1px solid #333;
+    border-bottom: 0;
+}
+header nav .gnb .depth01 > a {
+    display: block;
+}
+header nav .gnb .depth01:last-child > a {
+    border-bottom: 1px solid #333
+}
+header nav .gnb .depth01 .depth02 {
+    text-align: center;
+    display: none;
+    background-color: rgb(162, 213, 255);
+}
+header nav .gnb .depth01 .depth02 li {
+    border: 1px dashed #999;
+}
+
+/*  */
+header nav .gnb .depth01 > a:hover {
+    background-color: #555;
+    color: #fff;
+}
+header nav .gnb .depth01 .depth02 li:hover {
+    background-color: #37a7bb;
+    color: #fff;
+}
+/* header nav .gnb .depth01:hover .depth02 {
+    display: block;
+} */
+
+/*  */
+header .spot {
+    text-align: center;
+}
+header .spot p {
+    display: inline-block;
+}
+header .spot p span {
+    margin-left: 10px;
+}
+
+
+/* 🤍main */
+main {
+    width: 400px;
+    height: 100%;
+}
+
+/* 🤍.cont */
+.cont {
+    height: 100%;
+}
+
+/* 🤍.banner */
+.cont .banner {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #333;
+}
+.cont .banner img {
+    height: 110px;
+    width: 110px;
+    object-fit: cover;
+    padding: 010px;
+}
+.cont .banner div {
+    text-align: center;
+}
+.cont .banner div h4 {
+    line-height: 2;
+}
+.cont .banner img.arrow {
+    width: 25px;
+    height: 25px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* 🤍.news */
+.cont .news,
+.cont .gallery {
+    width: 100%;
+    height: 300px;
+    background-color: #ccc;
+}
+.cont .news h4,
+.cont .gallery h4 {
+    background-color: #37a7bb;
+    padding: 30px;
+    height: 70px;
+}
+.cont .news ul, 
+.cont .gallery .list .item {
+    text-align: center;
+    height: 230px;
+    padding: 40px 20px;
+}
+.cont .news ul li {
+    line-height: 3;
+    border-bottom: 1px solid #333;
+}
+.cont .news ul li span {
+    margin-left: 40px;
+}
+
+/* 🤍.gallery */
+.cont .gallery .list {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.cont .gallery .list .item img {
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+}
+.cont .gallery .list .item p {
+    word-break: keep-all;
+    text-align: left;
+    margin-top: 5px;
+}
+
+/* 🤍.direct */
+.cont .direct {
+    width: 100%;
+    height: 150px;
+    background-color: #37a7bb;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cont .direct p {
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* 🤍.main_slider */
+.main_slider {
+    width: calc(100% - 600px);
+    height: calc(100% - 120px);
+    overflow: hidden;
+}
+.main_slider .slide_wrap {
+    width: 3700px;
+    height: 100%;
+    display: flex;
+}
+.main_slider .slide_wrap .slide {
+    width: 1300px;
+    height: 100%;
+}
+.main_slider .slide_wrap .slide img {
+    width: 1300px;
+    height: 900px;
+    object-fit: cover;   
+}
+
+/* 🤍footer */
+footer {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    /* background-color: #37a7bb; */
+}
+footer .ft_logo {
+    width: 200px;
+    text-align: center;
+}
+footer .ft_text {
+    margin-left: 20px;
+}
+footer .ft_text ul{
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+footer .ft_text ul li span {
+    margin: 0 10px;
+}

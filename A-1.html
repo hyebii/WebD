@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>저스트쇼핑몰</title>
+    <link href="css/A-1.css" rel="stylesheet" />
+
+    <script src="js/jquery-3.6.4.min.js"></script>
+    <script>
+        $(function(){
+            $('.depth01').mouseenter(function(){
+                $('.depth02').stop().slideDown();
+            })
+            $('.depth01').mouseleave(function(){
+                $('.depth02').stop().slideUp();
+            })
+        });
+
+        $(function(){
+            $(".tab_btn ul li").click(function(){
+                var i = $(this).index();
+                console.log(i);
+
+                $(".tab_btn ul li").removeClass('active')
+                $(this).addClass('active')
+                
+                $(".tab_cont").hide();
+                $(".tab_cont").eq(i).show();
+
+                /* 💥return false; 링크차단 */
+            })
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <h1>
+                <a href="#">
+                    <img src="img/A-1/logo.png" alt="해골" />
+                </a>
+            </h1>
+            <nav>
+                <ul class="gnb">
+                    <li class="depth01">
+                        <a href="#">탑</a>
+                        <ul class="depth02">
+                            <li><a href="#">블라우스</a></li>
+                            <li><a href="#">티</a></li>
+                            <li><a href="#">셔츠</a></li>
+                            <li><a href="#">니트</a></li>
+                        </ul> <!-- .depth02 end -->
+                    </li> <!-- .depth01 end -->
+                    <li class="depth01">
+                        <a href="#">아우터</a>
+                        <ul class="depth02">
+                            <li><a href="#">자켓</a></li>
+                            <li><a href="#">코트</a></li>
+                            <li><a href="#">가디건</a></li>
+                            <li><a href="#">머플러</a></li>
+                        </ul> <!-- .depth02 end -->
+                    </li> <!-- .depth01 end -->
+                    <li class="depth01">
+                        <a href="#">팬츠</a>
+                        <ul class="depth02">
+                            <li><a href="#">청바지</a></li>
+                            <li><a href="#">짧은바지</a></li>
+                            <li><a href="#">긴바지</a></li>
+                            <li><a href="#">레깅스</a></li>
+                        </ul> <!-- .depth02 end -->
+                    </li> <!-- .depth01 end -->
+                    <li class="depth01">
+                        <a href="#">악세사리</a>
+                        <ul class="depth02">
+                            <li><a href="#">귀고리</a></li>
+                            <li><a href="#">목걸이</a></li>
+                            <li><a href="#">반지</a></li>
+                            <li><a href="#">팔찌</a></li>
+                        </ul> <!-- .depth02 end -->
+                    </li> <!-- .depth01 end -->
+
+                </ul>  <!-- .gnb end -->
+            </nav>
+        </div> <!-- .inner end -->
+    </header>
+    <main>
+        <section class="main_visual">
+            <a href="#">
+                <img src="img/A-1/main_visual.png" alt="오프라인 마켓 오픈" />
+            </a>
+        </section> <!-- .main_visual end -->
+
+        <section class="contents">
+            <div class="tab_menu">
+                <div class="tab_btn">
+                    <ul>
+                        <li class="active"><a href="#">공지사항</a></li>
+                        <li><a href="#">갤러리</a></li>
+                    </ul> 
+                </div> <!-- .tab_btn end -->
+
+                <div class="tab_cont cont01 active">
+                    <ul>
+                        <li><a href="#">1. 공지사항입니다.</a></li>
+                        <li><a href="#">2. 공지사항입니다.</a></li>
+                        <li><a href="#">3. 공지사항입니다.</a></li>
+                        <li><a href="#">4. 공지사항입니다.</a></li>
+                    </ul>
+                </div> <!-- .tab_cont cont01 active end -->
+                <div class="tab_cont cont02">
+                    <ul class="gallery">
+                        <li>
+                            <a href="#">
+                                <img src="img/A-1/gallery.jpg" alt="1" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/A-1/gallery02.jpg" alt="1" />
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="img/A-1/gallery03.jpg" alt="1" />
+                            </a>
+                        </li>
+                    </ul> <!-- .gallery end -->
+
+                </div> <!-- .tab_cont cont02 end -->
+
+            </div> <!-- .tab_menu end -->
+
+            <div class="cont03">
+                <a href="#">
+                    <figure>
+                        <img src="img/A-1/banner.png" alt="청바지 원단" />
+                    </figure>
+                </a>    
+            </div> <!-- .cont03 end -->
+    
+            <div class="cont04">
+                <a href="#">
+                    <figure>
+                        <img src="img/A-1/cont04.png" alt="Q&A" />
+                        <p>바로가기</p>
+                    </figure>
+                </a>  
+            </div> <!-- .cont04 end -->
+        </section> <!-- .contents end -->
+
+        
+    </section> <!-- .contents end -->
+</main>
+
+<footer>
+    <h1>
+        <a href="#">
+            <img src="img/A-1/logo_footer.png" alt="저스트 쇼핑몰" />
+        </a>
+    </h1>
+    <address>copyright</address>
+    <div class="sns">
+        <p><a href="#">Instagram</a></p>
+        <p><a href="#">Facebook</a></p>
+        <p><a href="#">Twitter</a></p>
+        
+    </div> <!-- .sns end -->
+</footer>
+    </main>
+</body>
+</html>

@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    line-height: 1;
+    color: #333;
+    background-color: #fff;
+}
+
+/*** 🤍header ***/
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #333;
+}
+header .inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    line-height: 100px;
+}
+header .inner h1 {
+    height: 100%;
+    position: relative;
+}
+header .inner h1 img {
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+header .inner nav .gnb {
+    display: flex; /* 여백 안만들기 위해 */
+}
+header .inner nav .gnb .depth01 {
+    text-align: center;
+    position: relative;
+}
+header .inner nav .gnb .depth01 > a {
+    padding: 10px 50px;
+    background-color: #bbb;
+    border: 1px solid #333;
+    border-right: 0;
+}
+header .inner nav .gnb .depth01:last-child > a {
+    border-right: 1px solid #333;
+}
+header .inner nav .gnb .depth01 .depth02 {
+    width: 100%;
+    position: absolute;
+    top: 71px;
+    left: 0;
+    background-color: #ccc;
+    /* opacity: 0;
+    transition: 1s; */
+}
+header .inner nav .gnb .depth01 .depth02 li {
+    line-height: 1;
+    padding: 10px 20px;
+    text-align: center;
+}
+/* header .inner nav .gnb:hover .depth01 .depth02 {
+    opacity: 1;
+} */
+header .inner nav .gnb:hover .depth01:hover > a {
+    background-color: #333;
+    color: #fff;
+}
+header .inner nav .gnb:hover .depth01 .depth02 li:hover {
+    background-color: #333;
+    color: #fff;
+}
+/*** 🤍.main_visual ***/
+.main_visual {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*** 🤍.contents ***/
+.contents {
+    width: 1200px;
+    height: 200px;
+    margin: 0 auto;
+    display: flex;
+
+}
+/*** 🤍.tab_menu ***/
+.contents .tab_menu .tab_btn ul {
+    display: flex;
+}
+.contents .tab_menu .tab_btn ul li {
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-left: 0;
+}
+.contents .tab_menu .tab_btn ul li:first-child {
+    border-left: 1px solid #ccc;
+}
+.contents .tab_menu .tab_btn ul li.active {
+    background-color: #ccc;
+}
+.contents .tab_menu .tab_cont {
+    width: 400px;
+    border: 1px solid #ccc;
+    height: 162px;
+    padding: 10px;
+}
+.contents .tab_menu .tab_cont.active li {
+    margin-top: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.contents .tab_menu .cont02 {
+    text-align: center;
+    display: none;
+}
+.contents .tab_menu .tab_cont .gallery li {
+    display: inline-block;
+}
+.contents .tab_menu .tab_cont .gallery li img {
+    width: 100px;
+    height: 140px;
+    object-fit: cover;
+}
+
+/*** 🤍.cont03 ***/
+.contents .cont03 {
+    width: 400px;
+    height: 200px;
+}
+.contents .cont03 figure {
+    width: 100%;
+    height: 100%;
+}
+.contents.cont03 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*** 🤍.cont04 ***/
+.contents .cont04 {
+    width: 400px;
+    height: 200px;
+}
+.contents .cont04 figure {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.contents .cont04 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.contents .cont04 figure p {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 20px;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 5px;
+}
+
+/*** 🤍footer ***/
+footer {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #333;
+    position: relative;
+}
+footer h1 {
+    width: 200px;
+    height: 100%;
+}
+footer h1 img {
+    height: 40px;
+    object-fit: cover;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+
+}
+footer address {
+    
+    line-height: 100px;
+    font-size: 16px;
+    text-transform: uppercase;
+
+}
+footer .sns p {
+    display: inline-block;
+    line-height: 100px;
+    text-align: center;
+    margin-right: 30px;
+}

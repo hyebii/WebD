@@ -1,0 +1,235 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+body {
+    line-height: 1;
+    color: #333;
+    background-color: #fff;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    /* background-color: aqua; */
+
+}
+header .inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;/* hd_bg 기준값 */
+    
+}
+header .inner h1 {
+    height: 100%;
+    position: relative;
+}
+header .inner h1 img {
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+header .inner nav .gnb {
+    display: flex;
+    height: 100%;
+    align-items: flex-end;
+}
+header .inner nav .gnb .depth01 {
+    text-align: center;
+    position: relative;
+    margin-bottom: 12px;
+}
+header .inner nav .gnb .depth01 > a {
+    padding: 15px 60px;
+}
+header .inner nav .gnb .depth01 .depth02 {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    /* opacity: 0;
+    transition: 1s; */
+}
+header .inner nav .gnb .depth01 .depth02 li {
+    line-height: 1;
+    padding: 15px 20px;
+}
+header .inner nav .gnb .hd_bg {
+    width: 100%;
+    height: 140px;
+    background-color: #449448;
+    position: absolute; /* 기준값 잡지않기 브라우저100% */
+    top: 100px;
+    left: 0;
+    /* opacity: 0;
+    transition: 1s; */
+}
+header .inner nav .gnb .depth01 .depth02 li:hover {
+    background-color: #294e2a;
+    color: #fff;
+}
+header .inner nav .gnb .depth01:hover > a {
+    background-color: #449448;
+    color: #fff;
+}
+/* header .inner nav .gnb:hover .depth01 .depth02 {
+    opacity: 1;
+} */
+/* header .inner nav .gnb:hover .hd_bg {
+    opacity: 1;
+} */
+
+/* 🤍.main_visual */
+.main_visual {
+    width: 1200px;
+    height: 300px;
+    margin: 0 auto;
+}
+.main_visual img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 🤍.contents */
+.contents {
+    width: 100%;
+    height: 200px;
+}
+.contents .inner {
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.contents .inner .cont01 {
+    width: 400px;
+    height: 100%;
+    
+}
+.contents .inner .cont01 p {
+    padding: 10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #ccc;
+    font-size: 20px;
+}
+.contents .inner .cont01 ul {
+    border: 1px solid #ccc;
+    padding: 25px;
+}
+.contents .inner .cont01 ul li {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+/* .cont02 */
+.contents .inner .cont02 {
+    width: 400px;
+    height: 100%;
+}
+.contents .inner .cont02 p {
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    background-color: #ccc;
+}
+.contents .inner .cont02 .list {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px 0;
+}
+.contents .inner .cont02 .list figure {
+    width: 100px;
+    height: 138px;
+}
+.contents .inner .cont02 .list figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .cont03 */
+.contents .inner .cont03 {
+    width: 400px;
+    height: 100%;
+}
+.contents .inner .cont03 figure {
+    width: 100%;
+    height: 100%;
+}
+.contents .inner .cont03 figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 🤍footer */
+footer {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;  
+    background-color: #449448; 
+}
+footer h1 {
+    width: 200px;
+    height: 100%;
+    position: relative;
+}
+footer h1 img {
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+footer address {
+    text-align: center;
+    width: 800px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    color: #fff;
+    font-size: 14px;
+    font-style: inherit; /* `💥 이탤릭체 없애기 */
+}
+footer address .copyright p {
+    display: inline-block;
+    margin-top: 5px;
+}
+footer address .copyright p span {
+    margin-left: 5px;
+}
+footer .site {
+    width: 200px;
+    line-height: 100px;
+    
+}
+footer .site form select {
+    width: 180px;
+    height: 35px;
+    border-radius: 5px;
+}
